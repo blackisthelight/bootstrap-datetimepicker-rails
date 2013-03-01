@@ -23,7 +23,7 @@ task stylesheets: :submodule do
   target_dir = "vendor/assets/stylesheets"
   mkdir_p target_dir
   Rake.rake_output_message 'Generating stylesheets'
-  FileUtils.cp_r Dir["bootstrap-datetimepicker/src/less/*"], "vendor/assets/stylesheets"
+  FileUtils.cp_r Dir["bootstrap-datetimepicker/src/scss/*"], "vendor/assets/stylesheets"
 end
 
 desc "Clean and then generate everything (default)"
